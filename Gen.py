@@ -5,7 +5,7 @@ class Generator(nn.Module):
 
     def __init__(self):
         super(Generator, self).__init__()
-        # Creating the model of the deconvolution neural network
+        # Creating the model of the deconvolutional neural network
         self.model = nn.Sequential(
                     # It takes input random vector of size 100
                     nn.ConvTranspose2d(in_channels=100, out_channels=512, kernel_size=4, stride=1, padding=0,
