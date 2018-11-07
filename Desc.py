@@ -4,7 +4,7 @@ class Descriminator(nn.Module):
 
     def __init__(self):
         super(Descriminator, self).__init__()
-        # Creating the model of the convolution neural network
+        # Creating the model of the convolutional neural network
         self.model = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=64, kernel_size=4, stride=2, padding=1, bias=False),
             # Discriminator works better with LeakyReLU than simple ReLU
