@@ -22,7 +22,7 @@ class Descriminator(nn.Module):
             nn.Sigmoid()
         )
 
-    # Function that forwards The input image comming from the Generator
+    # Function that forwards The input image coming from the Generator
     def forward(self, input):
         output = self.model(input)
         # Flatten the results of the convolutions
